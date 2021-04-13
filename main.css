@@ -1,0 +1,167 @@
+/* NAVIGATION */
+
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+}
+
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+
+/* BODY */
+
+#content {
+    max-width: 1000px;
+    margin: auto;
+    border: none;
+}
+
+main {
+    float: left;
+    width: 60%;
+}
+
+body>main {
+    max-width: 1000px;
+    margin-left: 400px;
+    padding: 30px 0px;
+    border-bottom: 1px solid #999;
+    color: #333;
+}
+
+
+/* BODY RESPONSIVE */
+
+@media screen and (max-width: 1024px) {
+    body>main {
+        margin-left: 250px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    main {
+        float: none;
+        width: 100%;
+    }
+    aside {
+        float: none;
+        width: 100%;
+        margin: auto;
+    }
+    body>main {
+        margin: auto;
+    }
+}
+
+
+/* ASIDE */
+
+aside {
+    float: right;
+    width: 30%;
+    display: block;
+}
+
+aside>.backgroundcolor {
+    margin: 10px auto;
+    background: #aecfb4;
+    min-height: 100px;
+}
+
+.centeraside {
+    padding: 0 80px;
+}
+
+.profpic {
+    width: 100px;
+}
+
+@media screen and (max-width: 600px) {
+    aside {
+        width: 100%;
+    }
+    .centeraside {
+        padding: 0 125px;
+    }
+}
+
+
+/* @media screen and (max-width:768px) {
+    .centeraside {
+        padding: 0 20px;
+    }
+} */
+
+@media screen and (min-width:1024px) {
+    .centeraside {
+        padding: 0 40px;
+    }
+}
+
+
+/* ARTICLE */
+
+article {
+    border-bottom: 2px dotted #999;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+article h2 {
+    font-weight: normal;
+    margin-bottom: 12px;
+}
+
+
+/* FOOTER */
+
+footer {
+    background: #333;
+    max-width: 2000px;
+    margin: auto;
+    clear: both;
+    text-align: center;
+}
+
+footer p {
+    padding: 50px 500px;
+    color: white;
+}
+
+
+/* RESPONSIVE FOOTER */
+
+@media screen and (max-width: 1024px) {
+    footer {
+        width: 100%;
+    }
+    footer p {
+        padding: 70px 50px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    footer {
+        width: 100%;
+    }
+    footer p {
+        padding: 20px 20px;
+    }
+}
